@@ -8,6 +8,7 @@
 library(tm)
 library(qdapRegex)
 
+# Custom Functions
 tryTolower <- function(x){
   # return NA when there is an error
   y = NA
