@@ -12,14 +12,14 @@ prompt <- "What is the capital of Brazil?"
 
 # API call inputs
 headers <- c(`Content-Type` = "application/json") 
-data    <- list(model = "gemma:2b", # Be sure to change to the model name you're using
+dataLLM    <- list(model = "gemma:2b", # Be sure to change to the model name you're using
                 prompt = prompt)
 
 # API Request
 res <- httr::POST(
   url = "http://localhost:11434/api/generate", 
   httr::add_headers(.headers=headers), 
-  body = jsonlite::toJSON(data, auto_unbox = TRUE), 
+  body = jsonlite::toJSON(dataLLM, auto_unbox = TRUE), 
   encode = "json")
 
 # Parse the streaming in JSON
