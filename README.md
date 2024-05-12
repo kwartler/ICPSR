@@ -40,7 +40,7 @@ R is customized for specific functions using libraries or packages.  In this cla
 install.packages('pacman')
 
 # Use pacman to install other libraries)
-pacman::p_load(dplyr, ggplot2, ggthemes, qdapRegex, slam, stringi, stringr, tm)
+pacman::p_load(dplyr, ggplot2, ggthemes, igraph, networkD3, qdapRegex, slam, stringi, stringr, tm)
 
 ```
 
