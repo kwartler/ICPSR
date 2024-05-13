@@ -44,6 +44,7 @@ pacman::p_load(dplyr, ggplot2, ggthemes, igraph, networkD3, qdapRegex, slam, str
 
 ```
 
+## Please install lm studio.  If you have to install ollama instructions are below.
 
 #### For students unable to use LM Studio here are some set up and testing instructions for Ollama.
 
