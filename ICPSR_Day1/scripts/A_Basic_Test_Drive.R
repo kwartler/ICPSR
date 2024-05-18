@@ -103,11 +103,11 @@ dataDF[1,2] #by index row 1, column 2
 
 ## Extract from R to a file; object to save then path, otherwise will go to working directory (fruit basket)
 # Windows slashes are backwards!
-savePath <- '~/Desktop/UNC_summer2023/personalFiles/example.csv'
+savePath <- '~/Desktop/ICPSR/personalFiles/example.csv'
 write.csv(dataDF,savePath, row.names=F)
 
 ## Read in a file as an object; just path
-newDF<-read.csv("~/Desktop/UNC_summer2023/personalFiles/example.csv")
+newDF<-read.csv("~/Desktop/ICPSR/personalFiles/example.csv")
 
 # Examine & Compare to original
 newDF
@@ -125,7 +125,7 @@ barplot(table(vec1))
 
 # Save a plot to disk programatically
 # open up a background graphics device, declare path and file name
-jpeg('~/Desktop/UNC_summer2023/personalFiles/example.jpg')
+jpeg('~/Desktop/ICPSR/personalFiles/example.jpg')
 barplot(table(vec1)) # plot it
 dev.off() # turn off the background graphics device
 
@@ -173,7 +173,7 @@ data.frame(numberVec = vectorA,
            trueFalseVec = vectorB[-1],
            stringsVec = vectorC)
 
-# Nested
+# Nested - lists can be ragged
 list(numberVec = list(oneSection = vectorA,
                       twoSection = vectorB),
      trueFalseVec = vectorB[-1],
