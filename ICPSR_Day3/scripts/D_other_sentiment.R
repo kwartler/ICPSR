@@ -13,7 +13,7 @@ library(ggplot2)
 
 
 # Read in data
-txt <- read.csv("https://raw.githubusercontent.com/kwartler/UNC_summer2023/main/lessons/D_Sentiment_APIs_GPT/data/new_orleans_airbnb_listings.csv")
+txt <- read.csv("https://raw.githubusercontent.com/kwartler/ICPSR/main/ICPSR_Day3/data/new_orleans_airbnb_listings.csv")
 
 # Explore
 head(txt)
@@ -60,19 +60,19 @@ ggplot(sentGrp[1:15,], aes(x = word_count, y = reorder(neighbourhood_cleansed, w
 #### Takes a long time; so save a copy of results
 # Now let's try SentimentAnalysis, which can also accept a corpus directly, again some calc differences
 # This function has an aggregate parameter but its unclear whether it does it by factor order thus
-# we control the join later
-#multipleMethods <- analyzeSentiment(txt$description,
-#                                    language = "english",
-#                                    aggregate = NULL,
-#                                    removeStopwords = TRUE,
-#                                    stemming = TRUE)
+nReviews <- 100
+multipleMethods <- analyzeSentiment(txt$description[1:nReviews],
+                                    language = "english",
+                                    aggregate = NULL,
+                                    removeStopwords = TRUE,
+                                    stemming = TRUE)
 #saveRDS(multipleMethods,
-#        '~/Desktop/UNC_summer2023/personalFiles/multipleMethods.rds')
-multipleMethods <- readRDS('~/Desktop/UNC_summer2023/lessons/D_Sentiment_APIs_GPT/data/multipleMethods.rds')
+#        '~/Desktop/ICPSR/personalFiles/multipleMethods.rds')
+#multipleMethods <- readRDS('~/Desktop/ICPSR/personalFiles/multipleMethods.rds')
 head(multipleMethods)
 
-# Append the grp
-results <- cbind(multipleMethods, neighbourhood_cleansed = txt$neighbourhood_cleansed)
+# Append the grp - we are only doing a few for expediency
+results <- cbind(multipleMethods, neighbourhood_cleansed = txt$neighbourhood_cleansed[1:nReviews])
 head(results)
 # Depending on the method you may want to aggregate up now
 neighborhoodResults <- results %>%
