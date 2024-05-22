@@ -158,7 +158,7 @@ links <- data.frame(source = match(edges$from, nodes$name) - 1,
 # Interactive Network Plot
 forceNetwork(Links = links, Nodes = nodes, Source = "source",
              Target = "target", Value = "value", NodeID = "name", 
-             Group = "group", opacity = 0.8, fontSize = 15, 
+             Group = "group", fontSize = 15, 
              opacity = 0.9)
 
 # Sankey Plot
