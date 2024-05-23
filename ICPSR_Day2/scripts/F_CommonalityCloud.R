@@ -59,8 +59,8 @@ chardonnay <- cleanCorpus(chardonnay, stops)
 coffee     <- cleanCorpus(coffee, stops)
 
 # Extract the cleaned text
-chardonnay <- sapply(chardonnay, content)
-coffee     <- sapply(coffee, content)
+chardonnay <- sapply(chardonnay, NLP::content)
+coffee     <- sapply(coffee, NLP::content)
 
 # FYI
 length(chardonnay)
@@ -98,3 +98,4 @@ commonality.cloud(t(drinkDTMm),
 
 
 # End
+

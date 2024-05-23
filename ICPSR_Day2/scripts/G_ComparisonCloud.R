@@ -56,8 +56,8 @@ coffee     <- cleanCorpus(coffee, stops)
 chardonnay <- cleanCorpus(chardonnay, stops)
 
 # Another way to extract the cleaned text
-coffee     <- unlist(lapply(coffee, content))
-chardonnay <- unlist(lapply(chardonnay, content))
+coffee     <- unlist(lapply(coffee, NLP::content))
+chardonnay <- unlist(lapply(chardonnay, NLP::content))
 
 # Instead of 1000 individual documents, collapse each into a single "subject" ie a single document
 coffee     <- paste(coffee, collapse = ' ')
@@ -82,7 +82,7 @@ comparison.cloud(t(drinkDTMm),
                  max.words=75,
                  random.order=FALSE,
                  title.size=0.5,
-                 colors=brewer.pal(ncol(drinkDTMm),"Dark2"),
+                 colors=c('tomato','goldenrod'),
                  scale=c(3,0.1))
 
 # End

@@ -76,7 +76,7 @@ rownames(mergedDF) <- c('Mortgage','Student')
 # Examine
 head(mergedDF[1:2,1:10])
 
-# Transpose for the graphing later
+# Transpose for the graphing later; could have made a TDM though
 mergedDF <- t(mergedDF)
 head(mergedDF)
 
