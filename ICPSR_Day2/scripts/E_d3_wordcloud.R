@@ -13,6 +13,7 @@ library(wordcloud2)
 library(RColorBrewer)
 library(echarts4r)
 library(dplyr)
+library(stringi)
 
 # Custom functions
 # Robust to lower
@@ -45,6 +46,9 @@ stops <- c(stopwords('english'), 'lol', 'amp', 'chardonnay')
 
 # Data
 text <- read.csv(filePath)
+
+# Fix the encoding for some students
+text$text <- stringi::stri_encode(text$text, "", "UTF-8")
 
 # Make a volatile corpus
 txtCorpus <- VCorpus(VectorSource(text$text))

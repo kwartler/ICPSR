@@ -45,6 +45,9 @@ stops <- c(stopwords('english'), 'chardonnay', 'lol')
 # Data
 text <- read.csv(filePath)
 
+# Fix the encoding for some students
+text$text <- stringi::stri_encode(text$text, "", "UTF-8")
+
 # Make a volatile corpus
 txtCorpus <- VCorpus(VectorSource(text$text))
 
