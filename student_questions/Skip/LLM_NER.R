@@ -40,7 +40,7 @@ for(i in 1:length(allTxt)){
     tortureMentions = paste(tortureID, collapse = ','))
   
   documentLocations[[i]] <- response
-  
+  print(i)
 }
 
 # Organize the information and save it
