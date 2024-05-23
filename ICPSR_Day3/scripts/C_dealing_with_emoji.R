@@ -30,7 +30,7 @@ intToBits(charToRaw(emojis$emoji[2]))
 rawToChar(charToRaw(emojis$emoji[2]))
 
 # Read in some data
-unicorns <- read.csv('~/Desktop/ICPSR/ICPSR_Day3/data/unicorns.csv')
+unicorns <- read.csv('https://raw.githubusercontent.com/kwartler/ICPSR/main/ICPSR_Day3/data/unicorns.csv')
 
 # Small sample
 unicorns$text[c(720, 804)]

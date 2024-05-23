@@ -16,8 +16,8 @@ library(tidyr)
 library(lubridate)
 
 # Data list.files()
-filePathA <- '~/Desktop/ICPSR/ICPSR_Day3/data/goldmanSachs_2023_3k.csv'
-filePathB <- '~/Desktop/ICPSR/ICPSR_Day3/data/BARCLAYS_BANK_DELAWARE_2023_3k.csv'
+filePathA <- 'https://raw.githubusercontent.com/kwartler/ICPSR/main/ICPSR_Day3/data/goldmanSachs_2023_3k.csv'
+filePathB <- 'https://raw.githubusercontent.com/kwartler/ICPSR/main/ICPSR_Day3/data/BARCLAYS_BANK_DELAWARE_2023_3k.csv'
 txtFiles  <- c(filePathA, filePathB)
 
 # Custom Functions
