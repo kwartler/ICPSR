@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: ZAF_1985_State_Department.txt
+Size: 68.9KB
+MD5: 6c679428cc1ad811745895d741e96e08
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: NER example - ZAF_1985_State_Department.txt
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/NER%20example%20-%20ZAF_1985_State_Department.txt
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/NER%20example%20-%20ZAF_1985_State_Department.txt"))

@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: C05782764.txt
+Size: 19.2KB
+MD5: 3460da7abad3bec5b80dbbdf4f6ed001
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: clinton/C05782764.txt
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/clinton/C05782764.txt
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/clinton/C05782764.txt"))

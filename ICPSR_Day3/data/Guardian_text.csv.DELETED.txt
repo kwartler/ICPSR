@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: Guardian_text.csv
+Size: 792.0KB
+MD5: d5181a69e174fbf2fc43cc0462780df8
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: Guardian_text.csv
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/Guardian_text.csv
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/Guardian_text.csv"))

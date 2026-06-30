@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: tidy_nrcLex.csv
+Size: 159.2KB
+MD5: faf23a546935622126f1b97e2db13059
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: tidy_nrcLex.csv
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/tidy_nrcLex.csv
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/tidy_nrcLex.csv"))

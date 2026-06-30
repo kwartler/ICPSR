@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: 53569.txt
+Size: 71.3KB
+MD5: 421c2a58ec7e40cd1c09f1d136debf52
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: 53569.txt
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/53569.txt
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/53569.txt"))

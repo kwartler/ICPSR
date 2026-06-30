@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: poppins_onScreenCharacters.csv
+Size: 10.2KB
+MD5: ef5e4eb307006a5339d76430ff36cc67
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: poppins_onScreenCharacters.csv
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/poppins_onScreenCharacters.csv
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/poppins_onScreenCharacters.csv"))

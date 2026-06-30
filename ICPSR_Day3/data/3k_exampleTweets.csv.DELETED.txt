@@ -1,0 +1,9 @@
+MOVED TO QUARANTINE on 2026-06-14 (stale/divergent version).
+
+File: 3k_exampleTweets.csv
+Note: the teaching-datasets repo has a DIFFERENT, current version of this file.
+You taught from the repo (raw.github) version, so that one wins.
+This older local copy (content differs) is preserved at:
+  /Users/edwardkwartler/Desktop/_dedupe_quarantine/g225__Desktop__ICPSR__ICPSR_Day3__data__3k_exampleTweets.csv
+
+Current repo version: https://raw.githubusercontent.com/kwartler/teaching-datasets/main/3k_exampleTweets.csv

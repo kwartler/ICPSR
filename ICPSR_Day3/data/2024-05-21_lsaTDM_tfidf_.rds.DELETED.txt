@@ -1,0 +1,11 @@
+REMOVED AS DUPLICATE during teaching-datasets dedupe on 2026-06-14.
+
+Original file: 2024-05-21_lsaTDM_tfidf_.rds
+Size: 3.3MB
+MD5: 9207ff800b3b98e9e1544d5127c60395
+
+Canonical copy now lives in the teaching-datasets repo:
+  repo path: 2024-06-09_lsaTDM_tfidf_.rds
+  raw URL:   https://raw.githubusercontent.com/kwartler/teaching-datasets/main/2024-06-09_lsaTDM_tfidf_.rds
+
+Fetch in R, e.g.:  read.csv(url("https://raw.githubusercontent.com/kwartler/teaching-datasets/main/2024-06-09_lsaTDM_tfidf_.rds"))
